@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+		<title>Hello, World!</title>
+		<style>
+		button{
+				background-color:black;
+				color:white;
+				margin-top:20px;
+				border-radius: 2rem;
+				margin-left:100px;
+				width:100px;
+				height:30px;
+				cursor: pointer;
+				cursor: all-scroll;
+				cursor: move;
+				box-shadow: 2.5px 5px #888888;
+				border: none;
+				font-weight:bolder;
+				font- size:30px;
+		}
+		button:hover{
+				background-color:cyan;
+				color:white;
+		</style>
+</head>
+<body id="body">
+		<h1 id="para">creat the  click event</h1><br>
+		<button id="button"   onclicke="toggleHide()">click me/ hide</button><br>
+		<button id="btn"   onmouse="changeColor(this)" onmouseout="resetColor(this)">click it</button><br>
+		<button id="btn1">click me</button><br>
+		<p id="para1"    onfocus="myFunction(this)"
+>EASSy is a 10,000km submarine fibre-optic cable system deployed along the east and south coast of Africa to service the voice, data, video and internet needs of the region.</p><br>
+		<button id="btn2"    onsubmit="myFunction()">sumit</button><br>
+			<button id="btn3"  onmousemove="myFunction()">reset</button>
+		
+		<script  >
+		//clicked event
+document.getElementById('button').addEventListener("click",function(){
+				alert("button is clicked")//show after click the button
+		});
+		//onclick event
+		function  toggleHide(){
+				let para= document.getElementById('para');
+				let  button=document.getElementByld('button');
+				if(para.style.display!=none){
+						para.style.display=none;
+				}
+				else{
+						para.style.display=block;
+				}
+		};
+		//onmouse event
+		let  btn=document.getElementById('btn').addEventListener("onmouse",
+		
+				function changeColor(btn) {
+            btn.style.color = 'red';
+        }
+
+        function resetColor(btn) {
+            btn.style.color = 'black';
+        });
+		//on fouse element
+		//we declear a function
+		function myFunction(x) {
+  x.style.background = "yellow";
+}
+		//onload event
+		let  body= document.getElementById("bodyl").addEventlistener("onload",
+		function myFunction() {
+  alert("Page is loaded");//functio was run alert can show
+}
+		//on submit event
+		//functio declear
+		function myFunction() {
+  alert("The form was submitted");
+				//on  mouse move
+				
+				let dev = document.getElementById('btn3').addEventListener("onmousemove",
+				function   chngebg(){
+						if(btn3.style.background!=none){
+								btn3.style.background=none;
+	}
+						else{
+								btn3.style.background=block;
+						}
+						// string method
+						//returns the character at a specified index
+						const   str="mannu";
+						let  change=str.at(2,5);
+						console.log(let);
+						//return the lenght of string
+						const str1="abcefgh";
+						console.log(str1.lenght);
+								//return the slice of string
+						//slice(start, end)
+						let text = "Apple, Banana, Kiwi";
+let part = text.slice(7,13);
+document.getElementById("para").innerHTML = part; 
+						//return the 
+				//		substring(start, end)
+						let text = "Apple, Banana, Kiwi";
+let part = text.substring(7,13);
+document.getElementById("para").innerHTML = part; 
+						//return the specifies the length of the extracted part.
+						//substr(start, length)
+						
+						let text = "Apple, Banana, Kiwi";
+let part = text.substr(7,13);
+document.getElementById("para").innerHTML = part; 
+						//return the all string in upper case
+						const text ="Apple, Banana, Kiwi";
+						let part= text.Uppercase();
+						document.getElementById("para").innerHTML;
+						//return the all sting in lower case
+						const text ="Apple, Banana, Kiwi";
+						let part=text.lowercase();
+		//replace string to anther string
+						let text = document.getElementById("para").innerHTML;
+						text.replace("event","me");
+						
+		</script>
+</body>
+</html>
